@@ -1,0 +1,13 @@
+import matplotlib.pyplot as plt
+
+# Data for pet ownership percentages
+labels = ['Blue', 'Yellow', 'Red', 'Gren']
+sizes = [25, 25, 25, 25]  # Percentages for each pet type
+colors = ['blue', 'yellow', 'red', 'green',]  # Optional color scheme
+explode = (0, 0, 0, 0)  # Emphasize the Color section
+
+# Plotting the pie chart
+plt.figure(figsize=(8, 6))
+plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%', shadow=True, startangle=140)
+plt.title('Four Colors')
+plt.show()
